@@ -127,7 +127,7 @@ const RequestList = () => {
                   <b>Problem/Suggestions:</b> {request.content}
                 </p>
                 <p>
-                  <b>Likes:</b>{" "}
+                  <b>Upvote:</b>{" "}
                   <span className='likes' style={getLikesStyle(request.likes)}>
                     {request.likes}
                   </span>
