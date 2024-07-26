@@ -34,8 +34,8 @@ const Navbar = () => {
       <Logo>Community Forum</Logo>
       <div>
         <NavLink to='/'>Home</NavLink>
-        <NavLink to='/about'>About</NavLink>
         <NavLink to='/history'>History</NavLink>
+        <NavLink to='/about'>About</NavLink>
       </div>
     </NavbarContainer>
   );
