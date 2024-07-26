@@ -149,7 +149,7 @@ const RequestList = () => {
                   className='like-button'
                   onClick={() => handleLike(request._id)}
                 >
-                  Like
+                  Upvote
                 </Button>
               </div>
             </Col>

@@ -79,7 +79,7 @@ const History = () => {
             <th>Resident Name</th>
             <th>Address</th>
             <th>Content</th>
-            <th>Likes</th>
+            <th>Upvote</th>
             <th>Authority Status</th>
             <th>Created At</th>
             <th>Update Status</th>
