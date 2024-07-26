@@ -9,7 +9,9 @@ const RequestList = () => {
 
   const fetchRequests = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/requests");
+      const response = await axios.get(
+        "https://community-form-website.onrender.com/requests"
+      );
       setRequests(response.data);
     } catch (error) {
       console.error("Error fetching requests:", error);
@@ -22,7 +24,9 @@ const RequestList = () => {
 
   const handleLike = async (id) => {
     try {
-      await axios.patch(`http://localhost:5000/requests/${id}/like`);
+      await axios.patch(
+        `https://community-form-website.onrender.com/requests/${id}/like`
+      );
       fetchRequests();
     } catch (error) {
       console.error("Error liking request:", error);

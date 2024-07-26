@@ -9,7 +9,9 @@ const History = () => {
 
   const fetchRequests = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/requests");
+      const response = await axios.get(
+        "https://community-form-website.onrender.com/requests"
+      );
       setRequests(response.data);
     } catch (error) {
       console.error("Error fetching requests:", error);
@@ -22,7 +24,9 @@ const History = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/requests/${id}`);
+      await axios.delete(
+        `https://community-form-website.onrender.com/requests/${id}`
+      );
       setRequests(requests.filter((request) => request._id !== id));
     } catch (error) {
       console.error("Error deleting request:", error);
@@ -32,7 +36,7 @@ const History = () => {
   const handleStatusUpdate = async (id, newStatus) => {
     try {
       const response = await axios.patch(
-        `http://localhost:5000/requests/${id}/status`,
+        `https://community-form-website.onrender.com/requests/${id}/status`,
         { status: newStatus }
       );
       setRequests(

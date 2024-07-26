@@ -11,11 +11,14 @@ const RequestForm = ({ onAddRequest }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/requests", {
-        residentName,
-        residentAddress,
-        content,
-      });
+      const response = await axios.post(
+        "https://community-form-website.onrender.com/requests",
+        {
+          residentName,
+          residentAddress,
+          content,
+        }
+      );
 
       // Assuming the backend returns the newly created request
       onAddRequest(response.data);
